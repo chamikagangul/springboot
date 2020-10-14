@@ -3,21 +3,18 @@ package com.chamika.springboot.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
 
 public class Customer {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @JsonProperty("Id")
+
+    @JsonProperty("id")
     private int customerId;
-    @JsonProperty("FName")
+    @JsonProperty("firstName")
     private String customerFirstName;
-    @JsonProperty("LName")
+    @JsonProperty("lastName")
     private String getCustomerLastName;
-    @JsonProperty("Email")
+    @JsonProperty("email")
     private String customerEmail;
 
     public int getCustomerId() {
